@@ -6,18 +6,17 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     //Текущее здоровье игрока
-    public int health = 10;
-    //Максимальное здоровье игрока
-    public int maxHealth = 10;
+    private int health = 10;
  
     //Число собранных монет
-    public int coins;
+    private int coins;
  
     //Префаб огненного шара и параметр Transform точки атаки
     public GameObject fireballPrefab;
     public Transform attackPoint;
  
-    //Компонент, отвечающий за проигрывание звуков
+ 
+   //Компонент, отвечающий за проигрывание звуков
     public AudioSource audioSource;
  
     //Звуковой файл, содержащий звуковой эффект нанесения урона
@@ -46,7 +45,7 @@ public class Player : MonoBehaviour
     public void CollectCoins()
     {
         coins++;
-        //print("Собранные монетки: " + coins);
+        print("Собранные монетки: " + coins);
     }
  
  
